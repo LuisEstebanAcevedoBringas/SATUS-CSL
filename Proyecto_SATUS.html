@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Proyecto_SATUS.css">
+        
+        <link rel="shortcut icon" href="Images/Icon/Satus.ico" type="image/x-icon">
+        <link rel="icon" href="Images/Icon/Satus.ico" type="image/x-icon"> 
+        <title>Sʌtvs | CSL</title>
+    </head>
+    <body>
+        <header class="Header Flex">
+            <div class="Logo">
+                <img src="Images/Logos/Logo.png">
+            </div>
+            <!-- Boton Menu (Moviles) -->
+            <button class="Menu_Movil" 
+            aria-controls="Menu_Navegacion" aria-expanded="false">
+                <span class="sr-only"></span>
+            </button>
+            <!-- Menu de navegacion -->
+            <nav>
+                <ul id="Menu_Navegacion" data-visible="false" 
+                    class="Menu_Navegacion Flex">
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#">Proyecto</a>
+                    </li>
+                    <li>
+                        <a href="#">Amenidades</a>
+                    </li>
+                    <li>
+                        <a href="#">Prototipos</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                    <li class="Lenguaje">
+                        <a href="#"><img src="Images/Header/Languajes/English.png" alt="English"></a>
+                    </li>
+                    <li class="Lenguaje">
+                        <a href="#"><img src="Images/Header/Languajes/Spanish.png" alt="Español"></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Galeria -->
+        <div class="Galeria_Principal">
+            <div class="Encabezado">
+                <h2> - Cabo San Lucas - </h2>
+            </div>
+        </div>
+
+        <!-- Proyecto -->
+        <div class="Proyecto Flex">
+            <div class="Encabezado_Blanco">
+                <h2> - Proyecto - </h2>
+            </div>
+            <div class="Galeria_Proyecto">
+                <div class="Contenedor_Imagenes_Proyecto">
+                    <img src="Images/Proyecto/Images_1.jpg" id="Content1" class="Imagen_Proyecto ImagenActiva">
+                    <img src="Images/Proyecto/Images_2.jpg" id="Content2" class="Imagen_Proyecto">
+                    <img src="Images/Proyecto/Images_3.jpg" id="Content3" class="Imagen_Proyecto">
+                    <img src="Images/Proyecto/Images_4.jpg" id="Content4" class="Imagen_Proyecto">
+                </div>
+                <button id="Prev_Image" onclick="Prev_Image()"> &lt; </button>
+                <button id="Next_Image" onclick="Next_Image()"> &gt; </button>
+            </div>
+
+        </div>
+
+        <!-- Amenidades -->
+        <div class="Amenidades Flex">
+            <div class="Encabezado">
+                <h2> - Amenidades - </h2>
+            </div>
+            <div class="Galeria_Amenidades">
+                <div class="Contenedor_Imagenes_Amenidades">
+                    <img src="Images/Amenidades/Basketball.jpg">
+                    <img src="Images/Amenidades/Dog_Playground.jpg">
+                    <img src="Images/Amenidades/Gym.jpg">
+                    <img src="Images/Amenidades/Playground.jpg">
+                    <img src="Images/Amenidades/Pool.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Prototipos -->
+        <div class="Prototipos Flex">
+            <div class="Encabezado_Blanco">
+                <h2> - Prototipo - </h2>
+            </div>
+            <div class="Galeria_Prototipos">
+                <div class="Contenedor_Imagenes_Prototipo">
+                    <img src="Images/Prototipos/Image_1.jfif">
+                </div>
+                <div class="Contenedor_Imagenes_Prototipo">
+                    <img src="Images/Prototipos/Image_2.jfif">
+                </div>
+                <div class="Contenedor_Imagenes_Prototipo">
+                    <img src="Images/Prototipos/Image_3.jfif">
+                </div>
+                <div class="Contenedor_Imagenes_Prototipo">
+                    <img src="Images/Prototipos/Image_4.jpg">
+                </div>
+                <div class="Contenedor_Imagenes_Prototipo">
+                    <img src="Images/Prototipos/Image_5.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Contacto -->
+        <div class="Contacto Flex">
+            <!-- Formulario -->
+            <div class="Form">
+                <div class="TextoContacto">
+                    <h2>Comunicate con nosotros</h2>
+                    <h3>Te respondermos lo mas pronto posible.</h3>
+                </div>
+                <form action="" class="Formulario">
+                    <input type="text" class="input" name="Nombre" id="Nombre" placeholder="Nombre completo" required>
+                    <input type="text" class="input" name="Telefono" id="Telefono" placeholder="Telefono" required>
+                    <input type="text" class="input" name="E-mail" id="E-mail" placeholder="E-mail" required>
+                    <textarea name="Mensaje" class="input" id="Mensaje" placeholder="Mensaje..." required></textarea>
+                    <input type="submit" class="Btn_Enviar" value="Enviar">
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="Footer">
+            <h2>SATUS © 2021. Todos los derechos reservados.</h2>
+        </div>
+        <script src="Proyecto_SATUS.js"></script>
+    </body>
+</html>
