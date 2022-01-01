@@ -193,9 +193,8 @@ img{
 }
 
 .Galeria_Proyecto{
-    width: 50%;
+    width: 80%;
     background-color: #ffffff;
-    /* min-width: 520px;  Con esto se ajusta a un minimo*/
     position: relative;
     border-radius: 5px;
     padding: 30px;
@@ -243,11 +242,10 @@ img{
 }
 
 .Galeria_Amenidades{
-    width: 50%;
+    width: 80%;
     overflow-x: hidden;
     border: 3px solid #5e614e;
     border-radius: 8px;
-    /* box-shadow: 10px 25px 30px rgba(0,0,0,0.3); */
     margin-bottom: 20px;
 }
 
@@ -292,7 +290,7 @@ img{
 /* ---------- Prototipo ---------- */
 .Prototipos{
     width: 100%;
-    height: 90vh;
+    height: 50vh;
     background: #5e614e;
     border: 1px solid #5e614e;
     flex-direction: column;
@@ -344,10 +342,10 @@ img{
 }
 
 .Form{
-    width: 50%;
-    max-width: 50%;
+    width: 60%;
+    max-width: 60%;
     margin: 20px;
-    /* border-right: 1px solid #5e614e; */
+    border: 1px solid #5e614e;
 }
 
 form{
@@ -356,11 +354,13 @@ form{
     padding-top: 20px;
 }
 
-.TextoContacto h2{
+.TextoContacto h2{ 
+    width: 100%;
     font-size: 40px;
 }
 
 .TextoContacto h3{
+    width: 100%;
     margin: 15px 0;
     font-size: 20px;
 }
