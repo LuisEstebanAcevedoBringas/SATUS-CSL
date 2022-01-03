@@ -50,7 +50,7 @@ img{
 /* ---------- Menu de navegacion ---------- */
 .Header{
     order: 1;
-    background: hsl(0 0% 0% / 0.8);
+    background: hsl(0 0% 0% / 1);
     align-items: center;
     justify-content: space-between;
     position: fixed; /* Set the navbar to fixed position */
@@ -193,10 +193,7 @@ img{
 
 .Galeria_Proyecto{
     max-width: 65rem;
-    background-color: #ffffff;
     position: relative;
-    border-radius: 5px;
-    padding: 10px;
     margin: 0 2rem 2rem 2rem;
 }
 .Contenedor_Imagenes_Proyecto{
@@ -211,6 +208,12 @@ img{
 .ImagenActiva{
     display: block;
 }
+
+.Contenedor_Imagenes_Proyecto img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .Prev_Image, .Next_Image{
     height: 40px;
     width: 40px;
@@ -248,7 +251,6 @@ img{
 .Galeria_Amenidades{
     max-width: 65rem;
     overflow-x: hidden;
-    border: 3px solid #5e614e;
     border-radius: 8px;
     margin: 0 2rem 2rem 2rem;
 }
