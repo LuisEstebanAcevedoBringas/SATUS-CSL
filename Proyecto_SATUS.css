@@ -193,12 +193,12 @@ img{
 }
 
 .Galeria_Proyecto{
-    width: 80%;
+    max-width: 65rem;
     background-color: #ffffff;
     position: relative;
     border-radius: 5px;
     padding: 30px;
-    margin-bottom: 20px;
+    margin: 0 2rem 2rem 2rem;
 }
 .Contenedor_Imagenes_Proyecto{
     position: relative;
@@ -212,7 +212,7 @@ img{
 .ImagenActiva{
     display: block;
 }
-#Prev_Image,#Next_Image{
+.Prev_Image, .Next_Image{
     height: 40px;
     width: 40px;
     position: absolute;
@@ -222,15 +222,20 @@ img{
     top: 0;
     bottom: 0;
     border: none;
-    border-radius: 3px;
+    border-radius: 50px;
     font-size: 18px;
     font-weight: bolder;
     cursor: pointer;
 }
-#Prev_Image{
+
+.Prev_Image:hover, .Next_Image:hover{
+    background: hsl(0 0% 0% / 0.9);
+}
+
+.Prev_Image{
     left: 15px;
 }
-#Next_Image{
+.Next_Image{
     right: 15px;
 }
 
@@ -242,11 +247,11 @@ img{
 }
 
 .Galeria_Amenidades{
-    width: 80%;
+    max-width: 65rem;
     overflow-x: hidden;
     border: 3px solid #5e614e;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin: 0 2rem 2rem 2rem;
 }
 
 .Contenedor_Imagenes_Amenidades{
@@ -298,9 +303,9 @@ img{
 }
 
 .Galeria_Prototipos{
-    width: 80%;
+    max-width: 65rem;
     flex-grow: 1;
-    margin-bottom: 20px;
+    margin: 0 2rem 2rem 2rem;
     display: flex;
     box-sizing: border-box;
 }
