@@ -157,7 +157,7 @@ img{
     width: 100%;
     text-align: center;
     font-size: 25px;
-    margin: 20px 0;
+    margin-top: 1rem;
     color: #000000;
 }
 
@@ -165,6 +165,7 @@ img{
     width: 100%;
     text-align: center;
     font-size: 25px;
+    margin-top: 1rem;
     color: #ffffff;
 }
 
@@ -188,7 +189,7 @@ img{
 
 @media (max-width:53em){
     .Galeria_Principal{
-        margin-top: 88px;
+        /* margin-top: 88px; */
     }
 }
 
@@ -360,7 +361,6 @@ img{
     width: 60%;
     max-width: 60%;
     margin: 20px;
-    border: 1px solid #5e614e;
 }
 
 form{
