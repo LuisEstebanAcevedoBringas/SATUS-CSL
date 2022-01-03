@@ -1,6 +1,4 @@
-*,
-*::before,
-**::after{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,6 +7,7 @@
 body{
     font-family: 'Raleway', sans-serif;
     width: 100%;
+    /* background: #5e614e; */
     overflow-x: hidden;
 }
 
@@ -54,8 +53,8 @@ img{
     background: #000000;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
     width: 100%;
     z-index: 1;
 }
@@ -83,7 +82,7 @@ img{
 .Menu_Navegacion a{
     color: #ffffff;
     text-decoration: none;
-    margin-inline-end: 1rem;
+    margin-inline-end: 1em;
 }
 
 .Menu_Navegacion a:hover{
@@ -100,10 +99,9 @@ img{
     .Menu_Navegacion img:hover{
         opacity: 1;
         cursor: pointer;
-        transition: 0.5s;
     }
 
-@media (max-width:53rem) {
+@media (max-width:53em) {
     .Header{
         background: hsl(0 0% 0% / 0.9);
         position: fixed;
@@ -125,6 +123,11 @@ img{
         transform: translateX(100%); /*Ocultamos el menu*/
         transition: transform 350ms ease-out; /*Animacion de menu plegable*/
     }
+
+    .Menu_Navegacion a:hover{
+        background-color: transparent;
+    }
+
 
     .Menu_Navegacion[data-visible="true"]{
         transform: translateX(0%);
