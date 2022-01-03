@@ -14,22 +14,34 @@ MenuMovil.addEventListener('click', () => {
     }
 });
 
-//Galeria - Proyecto
-let i = 0; // current slide
-let j = 4; // total slides
+//Galeria - Galeria Principal
+const ImagenesContenedor = document.querySelectorAll(".Contenedor_Imagenes_GaleriaPrincipal img");
 
-const images = document.querySelectorAll(".Contenedor_Imagenes_Proyecto img");
+const nextImageDelay = 5000;
+let ContadorImagen = 0; // setting a variable to keep track of the current image (slide)
+ImagenesContenedor[ContadorImagen].style.opacity = 1;
+setInterval(ImagenSiguiente_GP, nextImageDelay);
 
-function Next_Image(){
-    document.getElementById("Content" + (i+1)).classList.remove("ImagenActiva");
-    i = ( j + i + 1) % j;
-    document.getElementById("Content" + (i+1)).classList.add("ImagenActiva");
-    indicator( i + 1 );
+function ImagenSiguiente_GP() {
+    ImagenesContenedor[ContadorImagen].style.opacity = 0;
+    ContadorImagen = (ContadorImagen+1) % ImagenesContenedor.length;
+ImagenesContenedor[ContadorImagen].style.opacity = 1;
 }
 
-function Prev_Image(){
-    document.getElementById("Content" + (i+1)).classList.remove("ImagenActiva");
-    i = (j + i - 1) % j;
-    document.getElementById("Content" + (i+1)).classList.add("ImagenActiva");
-    indicator (i + 1 );
+//Galeria - Proyecto
+let Imagen_Actual = 0; // current slide
+let Total_Imagenes = 4; // total slides
+
+function ImagenSiguiente_Proyecto(){
+    document.getElementById("Content" + (Imagen_Actual+1)).classList.remove("ImagenActiva");
+    Imagen_Actual = ( Total_Imagenes + Imagen_Actual + 1) % Total_Imagenes;
+    document.getElementById("Content" + (Imagen_Actual+1)).classList.add("ImagenActiva");
+    indicator( Imagen_Actual + 1 );
+}
+
+function ImagenAnterior_Proyecto(){
+    document.getElementById("Content" + (Imagen_Actual+1)).classList.remove("ImagenActiva");
+    Imagen_Actual = (Total_Imagenes + Imagen_Actual - 1) %Total_Imagenes;
+    document.getElementById("Content" + (Imagen_Actual+1)).classList.add("ImagenActiva");
+    indicator (Imagen_Actual + 1 );
 }
