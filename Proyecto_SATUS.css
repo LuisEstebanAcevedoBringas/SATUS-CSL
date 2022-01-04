@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Raleway', sans-serif;
     width: 100%;
@@ -101,6 +105,7 @@ img{
         cursor: pointer;
     }
 
+/* ----------Menu desplegable ---------- */
 @media (max-width:53em) {
     .Header{
         background: hsl(0 0% 0% / 0.9);
@@ -187,11 +192,11 @@ img{
     transition: opacity 0.75s ease-in-out;
 }
 
-@media (max-width:53em){
+/* @media (max-width:53em){
     .Galeria_Principal{
-        /* margin-top: 88px; */
+        margin-top: 88px;
     }
-}
+} */
 
 /* ---------- Proyecto ---------- */
 .Proyecto{
@@ -326,7 +331,6 @@ img{
     flex-grow: 1;
     flex-basis: 0;
     transition: 0.5s;
-
 }
 
 .Contenedor_Imagenes_Prototipo img{
