@@ -328,7 +328,6 @@ img{
     width: 100%;
     height: 70vh;
     background: #5e614e;
-    border: 1px solid #5e614e;
     flex-direction: column;
     align-items: center;
 }
