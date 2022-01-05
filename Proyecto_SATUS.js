@@ -25,7 +25,7 @@ setInterval(ImagenSiguiente_GP, Delay);
 function ImagenSiguiente_GP() {
     ImagenesContenedor[ContadorImagen].style.opacity = 0;
     ContadorImagen = (ContadorImagen+1) % ImagenesContenedor.length;
-ImagenesContenedor[ContadorImagen].style.opacity = 1;
+    ImagenesContenedor[ContadorImagen].style.opacity = 1;
 }
 
 //Galeria - Proyecto
@@ -45,3 +45,18 @@ function ImagenAnterior_Proyecto(){
     document.getElementById("Content" + (Imagen_Actual+1)).classList.add("ImagenActiva");
     indicator (Imagen_Actual + 1 );
 }
+
+//Galeria Amenidades
+var indexValue = 0;
+function slideShow(){
+setTimeout(slideShow, 5000);
+var x;
+const img = document.getElementsByClassName("CIA");
+for(x = 0; x < img.length; x++){
+    img[x].style.display = "none";
+}
+indexValue++;
+if(indexValue > img.length){indexValue = 1}
+img[indexValue -1].style.display = "block";
+}
+slideShow();
