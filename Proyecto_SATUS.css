@@ -296,10 +296,13 @@ img{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    background-image: url("Images/Logos/Background.png");
+    z-index: -1;
 }
 
 .carousel{
-    z-index: -1;
+    background-color: #000000;
+    z-index: 0;
     max-width: 65rem;
     margin: 2rem;
 }
