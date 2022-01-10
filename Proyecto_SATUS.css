@@ -430,7 +430,7 @@ input::placeholder, textarea::placeholder{
     background:#5e614e;
 }
 
-/* Social Icons */
+/* ---------- Social Icons ---------- */
 .Contenedor_SI{
     display: flex;
     justify-content:center;
@@ -439,7 +439,6 @@ input::placeholder, textarea::placeholder{
 
 .icon{
     position: relative;
-    /* background-color: #ffffff; */
     border-radius: 50%;
     margin: 10px;
     width: 50px;
@@ -462,18 +461,8 @@ input::placeholder, textarea::placeholder{
     color: #ffffff;
 }
 
-.Contenedor_SI .twitter:hover{
-    background-color: #46c1f6;
-    color: #ffffff;
-}
-
 .Contenedor_SI .instagram:hover{
     background-color: #e1306c;
-    color: #ffffff;
-}
-
-.Contenedor_SI .github:hover{
-    background-color: #333333;
     color: #ffffff;
 }
 
@@ -481,6 +470,12 @@ input::placeholder, textarea::placeholder{
     background-color: #de463b;
     color: #ffffff;
 }
+
+.Contenedor_SI .linkedin:hover{
+    background-color: #0e76a8;
+    color: #ffffff;
+}
+
 /* -- Footer --*/
 .Footer{
     width: 100%;
