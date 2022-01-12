@@ -35,6 +35,11 @@ li{
     text-align: center;
 }
 
+p{
+    margin: 0;
+    padding: 0;
+}
+
 h1,h2,h3{
     font-weight: normal;
     margin: 0;
@@ -135,7 +140,7 @@ img{
     }
 
 /* ----------Menu desplegable ---------- */
-@media (max-width:53em) {
+@media (max-width:1024px) {
     .Header{
         background: hsl(0 0% 0% / 0.9);
         position: fixed;
@@ -143,7 +148,7 @@ img{
 
     .LS{
         aspect-ratio: 1;
-        width: 2rem;
+        width: 2.5rem;
     }
 
     .LA{
@@ -196,8 +201,11 @@ img{
 }
 
 /* ---------- Encabezados ---------- */
+.Encabezado, .Encabezado_Blanco{
+    text-align: center;
+}
+
 .Encabezado h2{
-    /* width: 100%; */
     text-align: center;
     font-size: 60px;
     margin: 2rem;
@@ -209,6 +217,18 @@ img{
     font-size: 60px;
     margin: 2rem;
     color: #ffffff;
+}
+
+@media (max-width:1024px) {
+    .Encabezado h2, .Encabezado_Blanco h2{
+        margin: 1rem;
+    }
+}
+
+@media (max-width:1024px) {
+    .Encabezado h2, .Encabezado_Blanco h2{
+        font-size: 40px;
+    }
 }
 
 /* ---------- Galeria Principal ---------- */
@@ -236,7 +256,6 @@ img{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background: #5e614e;
 }
 
 .Galeria_Proyecto{
@@ -289,6 +308,18 @@ img{
     right: 15px;
 }
 
+@media (max-width:1024px) {
+    .Proyecto{
+        padding: 15px;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .Galeria_Proyecto{
+        margin: 0.5rem;
+    }
+}
+
 /* ---------- Amenidades ---------- */
 .Amenidades{
     padding: 30px;
@@ -298,6 +329,7 @@ img{
     justify-content: space-evenly;
     background-image: url("Images/Logos/Background.png");
     z-index: -1;
+    background: #5e614e;
 }
 
 .carousel{
@@ -307,18 +339,28 @@ img{
     margin: 2rem;
 }
 
+@media (max-width:1024px) {
+    .Amenidades{
+        padding: 15px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .carousel{
+        margin: 0.5rem;
+    }
+}
+
 /* ---------- Prototipo ---------- */
 .Prototipos{
     width: 100%;
     height: 75vh;
-    background: #5e614e;
-    border: 1px solid #5e614e;
     flex-direction: column;
     align-items: center;
 }
 
 .Galeria_Prototipos{
-    max-width: 65rem;
+    max-width: 75rem;
     flex-grow: 1;
     margin: 0 2rem 2rem 2rem;
     display: flex;
@@ -343,6 +385,101 @@ img{
     flex-basis: 60%;
 }
 
+@media (max-width:1024px) {
+    .Prototipos{
+        padding: 15px;
+        height: 60vh;
+    }
+
+    .Galeria_Prototipos{
+        margin: 0.5rem;
+    }
+}
+
+/* ---------- Ubicacion ---------- */
+.Ubicacion {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.Ubicacion img{
+    width: 100%;
+    height: 100%;
+}
+
+.Boton_Ubicacion{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 30px;
+    left: 48%;
+}
+
+.Boton_Ubicacion i{
+    color: #000000;
+}
+
+.Boton_Ubicacion .icon {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.Boton_Ubicacion .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 1.25rem;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+.Boton_Ubicacion .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.Boton_Ubicacion .maps:hover,
+.Boton_Ubicacion .maps:hover .tooltip,
+.Boton_Ubicacion .maps:hover .tooltip::before {
+    background-color: #F6CF65;
+    color: #000000;
+}
+
+@media (max-width:1024px) {
+    .Ubicacion{
+        height: 60vh;
+    }
+}
+
+@media(max-width:768px){
+    .Ubicacion{
+        height: 50vh;
+    }
+}
+
 /* ---------- Contacto ---------- */
 .Contacto{
     width: 100%;
@@ -355,27 +492,44 @@ img{
     flex-direction: column;
 }
 
+/* Texto contacto */
+.TextoContacto{
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+    margin-bottom: 0;
+}
+
+.TextoContacto h2{
+    width: 100%;
+    font-size: 60px;
+}
+
+.TextoContacto h3{
+    width: 100%;
+    font-size: 30px;
+}
+
 .Form{
     width: 60%;
     max-width: 60%;
-    margin-top: 20px;
+}
+
+@media (max-width:640px){
+    .Form{
+        width: 85%;
+        max-width: 85%;
+    }
+
+    .TextoContacto{
+        width: 85%;
+    }
 }
 
 form{
     max-width: 420px;
     margin: auto;
     padding-top: 20px;
-}
-
-.TextoContacto h2{ 
-    width: 100%;
-    font-size: 40px;
-}
-
-.TextoContacto h3{
-    width: 100%;
-    margin: 15px 0;
-    font-size: 20px;
 }
 
 .input {
@@ -486,8 +640,14 @@ input::placeholder, textarea::placeholder{
 }
 
 @media (max-width:53em){
-    .Footer{
+    .Footer h2{
         font-size: 100%;
+    }
+}
+
+@media (max-width:640px){
+    .Footer h2{
+        font-size: 15px;
     }
 }
 

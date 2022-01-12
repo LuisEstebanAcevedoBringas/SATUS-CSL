@@ -44,6 +44,9 @@
                         <a class="scroll" href="#Prototipos">Prototipos</a>
                     </li>
                     <li>
+                        <a class="scroll" href="#Ubicacion">Ubicacion</a>
+                    </li>
+                    <li>
                         <a class="scroll" href="#Contacto">Contacto</a>
                     </li>
                     <li>
@@ -72,6 +75,7 @@
 
         <!-- ---------- Proyecto ---------- -->
         <section class="Proyecto Flex" id="Proyecto">
+            <!-- Galeria_Proyecto -->
             <div class="Galeria_Proyecto">
                 <div class="Contenedor_Imagenes_Proyecto">
                     <img src="Images/Proyecto/Images_1.jpg" id="Content1" class="Imagen_Proyecto ImagenActiva">
@@ -82,8 +86,8 @@
                 <button class="ImagenAnterior" onclick="ImagenAnterior_Proyecto()"> <i class="fas fa-arrow-left"></i> </button>
                 <button class="ImagenSiguiente" onclick="ImagenSiguiente_Proyecto()"> <i class="fas fa-arrow-right"></i> </button>
             </div>
-
-            <div class="Encabezado_Blanco">
+            <!-- Encabezado -->
+            <div class="Encabezado">
                 <h2>Proyecto</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </div>
@@ -91,11 +95,12 @@
 
         <!-- ---------- Amenidades ---------- -->
         <section class="Amenidades Flex" id="Amenidades">
-            <div class="Encabezado">
+            <!-- Encabezado -->
+            <div class="Encabezado_Blanco">
                 <h2>Amenidades</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </div>
-            
+            <!-- Galeria_Amenidades -->
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -115,14 +120,15 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
         <!-- ---------- Prototipos ---------- -->
         <section class="Prototipos Flex" id="Prototipos">
-            <div class="Encabezado_Blanco">
+            <!-- Encabezado -->
+            <div class="Encabezado">
                 <h2>Prototipos</h2>
             </div>
+            <!-- Galeria_Prototipos -->
             <div class="Galeria_Prototipos">
                 <div class="Contenedor_Imagenes_Prototipo">
                     <a href="https://www.avagic.com" target="_blank"><img src="Images/Prototipos/Image_1.jfif"></a>
@@ -133,23 +139,35 @@
                 <div class="Contenedor_Imagenes_Prototipo">
                     <a href="https://www.avagic.com" target="_blank"><img src="Images/Prototipos/Image_3.jfif"></a>
                 </div>
-                <div class="Contenedor_Imagenes_Prototipo">
+                <!-- <div class="Contenedor_Imagenes_Prototipo">
                     <a href="https://www.avagic.com" target="_blank"><img src="Images/Prototipos/Image_4.jpg"></a>
-                </div>
+                </div> -->
                 <!-- <div class="Contenedor_Imagenes_Prototipo">
                     <img src="Images/Prototipos/Image_5.jpg">
                 </div> -->
             </div>
         </section>
 
+        <!-- ---------- Ubicacion ---------- -->
+        <section class="Ubicacion" id="Ubicacion">
+            <img src="Images/Ubicacion/Ubicacion.jpeg">
+            <div class="Boton_Ubicacion">
+                <div class="icon maps">
+                    <div class="tooltip">Ubicacion</div>
+                    <a href="https://www.google.com" target="_blank" ><span><i class="fas fa-map-marker-alt"></i></span></a>
+                </div>
+            </div>
+        </section>
+
         <!-- ---------- Contacto ---------- -->
         <section class="Contacto Flex" id="Contacto">
-            <!-- ---------- Formulario ---------- -->
+            <!-- Texto_Contacto -->
+            <div class="Encabezado">
+                <h2>Comunicate con nosotros</h2>
+                <h3>Te respondermos lo mas pronto posible.</h3>
+            </div>
+            <!--  Formulario  -->
             <div class="Form">
-                <div class="TextoContacto">
-                    <h2>Comunicate con nosotros</h2>
-                    <h3>Te respondermos lo mas pronto posible.</h3>
-                </div>
                 <form action="" class="Formulario">
                     <input type="text" class="input" name="Nombre" id="Nombre" placeholder="Nombre completo" required>
                     <input type="text" class="input" name="Telefono" id="Telefono" placeholder="Telefono" required>
@@ -160,7 +178,7 @@
                 </form>
             </div>
 
-            <!-- ---------- Iconos de redes sociales ---------- -->
+            <!--  Iconos de redes sociales  -->
             <div class="Contenedor_SI">
                 <div class="icon facebook">
                     <span><i class="fab fa-facebook-f"></i></span>
