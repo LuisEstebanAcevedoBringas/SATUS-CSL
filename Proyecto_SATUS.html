@@ -168,12 +168,11 @@
             </div>
             <!--  Formulario  -->
             <div class="Form">
-                <form action="" class="Formulario">
-                    <input type="text" class="input" name="Nombre" id="Nombre" placeholder="Nombre completo" required>
-                    <input type="text" class="input" name="Telefono" id="Telefono" placeholder="Telefono" required>
-                    <!-- <input type="text" class="input" name="E-mail" id="E-mail" placeholder="E-mail" required> -->
-                    <input type="email" class="input" name="E-mail" id="E-mail" placeholder="E-mail" required>
-                    <textarea name="Mensaje" class="input" id="Mensaje" placeholder="Mensaje..." required></textarea>
+                <form action="" th:action='@{/index}' method="POST" th:object='${contacto}' class="Formulario">
+                    <input th:field='*{nombreCompleto}' type="text" class="input" name="Nombre" id="Nombre" placeholder="Nombre completo" required>
+                    <input th:field='*{telefono}' type="text" class="input" name="Telefono" id="Telefono" placeholder="Telefono" required>
+                    <input th:field='*{email}' type="email" class="input" name="E-mail" id="E-mail" placeholder="E-mail" required>
+                    <textarea th:field='*{mensaje}' name="Mensaje" class="input" id="Mensaje" placeholder="Mensaje..." required></textarea>
                     <input type="submit" class="Btn_Enviar" value="Enviar">
                 </form>
             </div>
