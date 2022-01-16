@@ -139,7 +139,7 @@ img{
     }
 
 /* ----------Menu desplegable ---------- */
-@media (max-width:1024px) {
+@media (max-width:1300px) {
     .Header{
         background: hsl(0 0% 0% / 0.9);
         position: fixed;
@@ -359,7 +359,7 @@ img{
 }
 
 .Galeria_Prototipos{
-    max-width: 75rem;
+    max-width: 65rem;
     flex-grow: 1;
     margin: 0 2rem 2rem 2rem;
     display: flex;
@@ -377,11 +377,12 @@ img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.5s;
+    transition: 0.4s;
+    opacity: 0.5;
 }
 
-.Contenedor_Imagenes_Prototipo:hover{
-    flex-basis: 60%;
+.Contenedor_Imagenes_Prototipo img:hover{
+    opacity: 1;
 }
 
 @media (max-width:1024px) {
