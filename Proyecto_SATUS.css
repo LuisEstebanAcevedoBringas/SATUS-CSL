@@ -471,6 +471,10 @@ img{
     .Ubicacion{
         height: 60vh;
     }
+
+    .Boton_Ubicacion{
+        left: 46%;
+    }
 }
 
 @media(max-width:768px){
