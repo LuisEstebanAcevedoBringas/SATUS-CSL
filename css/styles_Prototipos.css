@@ -1,0 +1,44 @@
+.Prototipos{
+    width: 100%;
+    height: 75vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Galeria_Prototipos{
+    max-width: 65rem;
+    flex-grow: 1;
+    margin: 0 2rem 2rem 2rem;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.Contenedor_Imagenes_Prototipo{
+    margin: 0 1%;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: 0.5s;
+}
+
+.Contenedor_Imagenes_Prototipo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+    opacity: 0.5;
+}
+
+.Contenedor_Imagenes_Prototipo img:hover{
+    opacity: 1;
+}
+
+@media (max-width:1024px) {
+    .Prototipos{
+        padding: 15px;
+        height: 60vh;
+    }
+
+    .Galeria_Prototipos{
+        margin: 0.5rem;
+    }
+}

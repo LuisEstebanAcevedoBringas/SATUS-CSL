@@ -1,0 +1,13 @@
+.Whatsapp_Icon{
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    bottom: 20px;    
+    left: 20px;
+    z-index: 1;
+}
+
+.Whatsapp_Icon img{
+    height: 4rem;
+    width: 4rem;
+}

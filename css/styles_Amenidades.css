@@ -1,0 +1,29 @@
+.Amenidades{
+    padding: 30px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url("Images/Logos/Background.png");
+    z-index: -1;
+    background: #5e614e;
+}
+
+.carousel{
+    background-color: #000000;
+    z-index: 0;
+    max-width: 65rem;
+    margin: 2rem;
+}
+
+@media (max-width:1024px) {
+    .Amenidades{
+        padding: 15px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .carousel{
+        margin: 0.5rem;
+    }
+}

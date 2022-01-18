@@ -1,0 +1,125 @@
+.Header{
+    order: 1;
+    background: hsl(0 0% 0% / 0.4);
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.Logo{
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo h2{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.LS{
+    margin: 1rem 0 1rem 1rem;
+    height: 3.5rem;
+}
+
+.LA{
+    height: 2rem;
+}
+
+.Menu_Movil{
+    display: none;
+}
+
+.Menu_Navegacion{
+    font-size: 18px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Menu_Navegacion a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-inline-end: 1em;
+}
+
+.Menu_Navegacion a:hover{
+    color: #6f6f6e;
+    transition: 0.5s;
+}
+
+.Menu_Navegacion img{
+    aspect-ratio: 1;
+    width: 2.5rem;
+    opacity: 0.7;
+    }
+
+    .Menu_Navegacion img:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+
+/* ----------Menu desplegable ---------- */
+@media (max-width:1300px) {
+    .Header{
+        background: hsl(0 0% 0% / 0.9);
+        position: fixed;
+    }
+
+    .LS{
+        height: 2.75rem;
+    }
+
+    .LA{
+        height: 1.5rem;
+    }
+
+    .Logo h2{
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    .Menu_Navegacion{
+        font-size: 20px;
+        background: hsl(0 0% 0% / 0.9);
+        z-index: 1000;
+        position: fixed;
+        inset: 0 0 0 50%;
+        flex-direction: column;
+        padding: min(40vh, 3rem);
+        transform: translateX(100%); /*Ocultamos el menu*/
+        transition: transform 350ms ease-out; /*Animacion de menu plegable*/
+    }
+
+    .Menu_Navegacion a:hover{
+        background-color: transparent;
+    }
+
+
+    .Menu_Navegacion[data-visible="true"]{
+        transform: translateX(0%);
+    }
+
+    .Menu_Movil{
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background: url("Images/Icon/Open_Menu.png");
+        background-repeat: no-repeat;
+        width: 2rem;
+        aspect-ratio: 1;
+        top: 1.25rem;
+        right: 1.25rem;
+        border: none;
+    }
+
+    .Menu_Movil[aria-expanded = "true"]{
+        background: url("Images/Icon/Close_Menu.png");
+        background-repeat: no-repeat;
+    }
+}

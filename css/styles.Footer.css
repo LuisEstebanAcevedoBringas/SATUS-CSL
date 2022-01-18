@@ -1,0 +1,19 @@
+.Footer{
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    background-color: #5e614e;
+}
+
+@media (max-width:53em){
+    .Footer h2{
+        font-size: 100%;
+    }
+}
+
+@media (max-width:640px){
+    .Footer h2{
+        font-size: 15px;
+    }
+}

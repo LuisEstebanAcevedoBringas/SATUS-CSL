@@ -1,0 +1,148 @@
+.Contacto{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px auto;
+    margin:auto;
+    flex-direction: column;
+}
+
+/* Texto contacto */
+.TextoContacto{
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+    margin-bottom: 0;
+}
+
+.TextoContacto h2{
+    width: 100%;
+    font-size: 60px;
+}
+
+.TextoContacto h3{
+    width: 100%;
+    font-size: 30px;
+}
+
+.Form{
+    width: 60%;
+    max-width: 60%;
+}
+
+@media (max-width:640px){
+    .Form{
+        width: 85%;
+        max-width: 85%;
+    }
+
+    .TextoContacto{
+        width: 85%;
+    }
+}
+
+form{
+    max-width: 420px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.input {
+    color:#000000;
+    font-family: 'Raleway', sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #000;
+    transition: all 0.2s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+}
+
+.input:focus{
+    border:2px solid #5e614e;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:none;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #000000;
+    opacity: 0.5;
+}
+
+.Btn_Enviar{
+    width: 100%;
+    border: 2px solid #000000;
+    border-radius:5px;
+    cursor:pointer;
+    color:#000000;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+}
+
+.Btn_Enviar:hover{
+    color: #ffffff;
+    border:2px solid transparent;
+    background:#5e614e;
+}
+
+/* ---------- Social Icons ---------- */
+.Contenedor_SI{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 20px;
+}
+
+.icon{
+    position: relative;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.Contenedor_SI .icon:hover span{
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.Contenedor_SI .facebook:hover{
+    background-color: #3b5999;
+    color: #ffffff;
+}
+
+.Contenedor_SI .instagram:hover{
+    background-color: #e1306c;
+    color: #ffffff;
+}
+
+.Contenedor_SI .youtube:hover{
+    background-color: #de463b;
+    color: #ffffff;
+}
+
+.Contenedor_SI .linkedin:hover{
+    background-color: #0e76a8;
+    color: #ffffff;
+}

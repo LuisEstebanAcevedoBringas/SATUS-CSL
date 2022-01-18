@@ -1,0 +1,69 @@
+.Proyecto{
+    width: 100%;
+    padding: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Galeria_Proyecto{
+    max-width: 65rem;
+    position: relative;
+    margin: 2rem;
+}
+.Contenedor_Imagenes_Proyecto{
+    position: relative;
+    width: 100%;
+}
+.Imagen_Proyecto{
+    position: relative;
+    width: 100%;
+    display: none;
+}
+.ImagenActiva{
+    display: block;
+}
+
+.Contenedor_Imagenes_Proyecto img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ImagenAnterior, .ImagenSiguiente{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    background-color: #5e614e;
+    color: #ffffff;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.ImagenAnterior:hover, .ImagenSiguiente:hover{
+    background: hsl(0 0% 0% / 0.9);
+}
+
+.ImagenAnterior{
+    left: 15px;
+}
+.ImagenSiguiente{
+    right: 15px;
+}
+
+@media (max-width:1024px) {
+    .Proyecto{
+        padding: 15px;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .Galeria_Proyecto{
+        margin: 0.5rem;
+    }
+}

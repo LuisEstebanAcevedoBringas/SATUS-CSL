@@ -1,0 +1,86 @@
+.Ubicacion {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.Ubicacion img{
+    width: 100%;
+    height: 100%;
+}
+
+.Boton_Ubicacion{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 30px;
+    left: 48%;
+}
+
+.Boton_Ubicacion i{
+    color: #000000;
+}
+
+.Boton_Ubicacion .icon {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.Boton_Ubicacion .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 1.25rem;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+.Boton_Ubicacion .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.Boton_Ubicacion .maps:hover,
+.Boton_Ubicacion .maps:hover .tooltip,
+.Boton_Ubicacion .maps:hover .tooltip::before {
+    background-color: #F6CF65;
+    color: #000000;
+}
+
+@media (max-width:1024px) {
+    .Ubicacion{
+        height: 60vh;
+    }
+
+    .Boton_Ubicacion{
+        left: 46%;
+    }
+}
+
+@media(max-width:768px){
+    .Ubicacion{
+        height: 50vh;
+    }
+}

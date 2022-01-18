@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+li{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3{
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    margin: 0;
+    padding: 0;
+}
+
+.Flex{
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+/* ---------- Encabezados ---------- */
+.Encabezado, .Encabezado_Blanco{
+    text-align: center;
+}
+
+.Encabezado h2{
+    text-align: center;
+    font-size: 60px;
+    margin: 2rem;
+    color: #000000;
+}
+
+.Encabezado_Blanco h2{
+    text-align: center;
+    font-size: 60px;
+    margin: 2rem;
+    color: #ffffff;
+}
+
+@media (max-width:1024px) {
+    .Encabezado h2, .Encabezado_Blanco h2{
+        margin: 1rem;
+    }
+}
+
+@media (max-width:1024px) {
+    .Encabezado h2, .Encabezado_Blanco h2{
+        font-size: 40px;
+    }
+}
