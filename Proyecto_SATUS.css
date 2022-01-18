@@ -11,7 +11,6 @@ html{
 body{
     font-family: 'Raleway', sans-serif;
     width: 100%;
-    /* background: #5e614e; */
     overflow-x: hidden;
 }
 
@@ -633,7 +632,7 @@ input::placeholder, textarea::placeholder{
     color: #ffffff;
 }
 
-/* -- Footer --*/
+/* ----------- Footer ----------- */
 .Footer{
     width: 100%;
     color: #ffffff;
