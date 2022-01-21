@@ -39,6 +39,21 @@ img{
 }
 
 /* ---------- Pagina Principal ---------- */
+
+.Whatsapp_Icon{
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    bottom: 20px;    
+    left: 20px;
+    z-index: 1;
+}
+
+.Whatsapp_Icon img{
+    height: 4rem;
+    width: 4rem;
+}
+
 .Proximamente{
     justify-content: center;
     align-items: center;
@@ -113,6 +128,10 @@ img{
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
+.facebook a, .instagram a, .youtube a, .linkedin a,.whatsapp a, .googlemaps a{
+    color: #ffffff;
+}
+
 .Contenedor_SI .facebook:hover{
     background-color: #3b5999;
     color: #ffffff;
@@ -135,11 +154,6 @@ img{
 
 .Contenedor_SI .googlemaps:hover{
     background-color: #FF9900;
-    color: #ffffff;
-}
-
-.Contenedor_SI .whatsapp:hover{
-    background-color: #25D366;
     color: #ffffff;
 }
 
