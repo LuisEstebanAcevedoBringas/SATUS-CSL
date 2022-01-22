@@ -9,12 +9,14 @@
 
 html{
     scroll-behavior: smooth;
+    background-color: #5e614e;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
     width: 100%;
-    background-color: #5e614e;
+    background-image: url("./scr/assets/background/background.png");
+    background-size: contain;
 }
 
 a{
