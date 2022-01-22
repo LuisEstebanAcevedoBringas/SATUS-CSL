@@ -15,8 +15,6 @@ html{
 body{
     font-family: 'Montserrat', sans-serif;
     width: 100%;
-    background-image: url("./scr/assets/background/background.png");
-    background-size: contain;
 }
 
 a{
@@ -53,6 +51,20 @@ img{
 .Whatsapp_Icon img{
     height: 4rem;
     width: 4rem;
+}
+
+.Fondo{
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.Fondo img{
+    width: 100%;
+    height: 100%;
 }
 
 .Proximamente{
