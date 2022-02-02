@@ -110,7 +110,7 @@
         display: block;
         position: absolute;
         z-index: 9999;
-        background: url("Images/Icon/Open_Menu.png");
+        background: url("../scr/assets/Icons/Open_Menu.png");
         background-repeat: no-repeat;
         width: 2rem;
         aspect-ratio: 1;
@@ -120,7 +120,7 @@
     }
 
     .Menu_Movil[aria-expanded = "true"]{
-        background: url("Images/Icon/Close_Menu.png");
+        background: url("../scr/assets/Icons/Close_Menu.png");
         background-repeat: no-repeat;
     }
 }
