@@ -70,15 +70,20 @@ form{
     border:2px solid #5e614e;
 }
 
-textarea {
+textarea{
     height: 150px;
     line-height: 150%;
     resize:none;
+    margin-bottom: 15px;
 }
 
 input::placeholder, textarea::placeholder{
     color: #000000;
     opacity: 0.5;
+}
+
+.checkbox{
+    margin-bottom: 15px;
 }
 
 .Btn_Enviar{
@@ -90,8 +95,8 @@ input::placeholder, textarea::placeholder{
     font-size:24px;
     padding-top:10px;
     padding-bottom:10px;
-    transition: all 0.3s;
-    margin-top:-4px;
+    transition: all 0.4s;
+
     font-weight:700;
 }
 

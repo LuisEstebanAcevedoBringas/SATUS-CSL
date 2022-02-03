@@ -15,3 +15,9 @@
     opacity: 0;
     transition: opacity 0.75s ease-in-out;
 }
+
+@media only screen and (max-width : 415px) {
+    .Galeria_Principal{
+        height: 80vh;
+    }
+}
