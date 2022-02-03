@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="./css/styles_WhatsApp.css">
         <link rel="stylesheet" href="./css/styles_Menu.css">
         <link rel="stylesheet" href="./css/styles_GaleriaPrincipal.css"> 
+        <link rel="stylesheet" href="./css/styles_Video.css">
         <link rel="stylesheet" href="./css/styles_Proyecto.css"> 
         <link rel="stylesheet" href="./css/styles_Amenidades.css">
         <link rel="stylesheet" href="./css/styles_Prototipos.css">
@@ -84,6 +85,16 @@
             </div>
         </section>
 
+        <!-- ---------- Video SATUS ---------- -->
+        <section class="video Flex" id="Video">
+            <div class="Encabezado">
+                <h2>Video</h2>
+            </div>
+            <div class="contenedor_Video">
+                <iframe src="https://www.youtube.com/embed/zGam-ajHPQM" title="Satus | Cabo San Lucas"  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
         <!-- ---------- Proyecto ---------- -->
         <section class="Proyecto Flex" id="Proyecto">
             <!-- Galeria_Proyecto -->
@@ -98,7 +109,7 @@
                 <button class="ImagenSiguiente" onclick="ImagenSiguiente_Proyecto()"> <i class="fas fa-arrow-right"></i> </button>
             </div>
             <!-- Encabezado -->
-            <div class="Encabezado">
+            <div class="Encabezado_Blanco">
                 <h2>Proyecto</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </div>
@@ -107,7 +118,7 @@
         <!-- ---------- Amenidades ---------- -->
         <section class="Amenidades Flex" id="Amenidades">
             <!-- Encabezado -->
-            <div class="Encabezado_Blanco">
+            <div class="Encabezado">
                 <h2>Amenidades</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </div>
@@ -136,7 +147,7 @@
         <!-- ---------- Prototipos ---------- -->
         <section class="Prototipos Flex" id="Prototipos">
             <!-- Encabezado -->
-            <div class="Encabezado">
+            <div class="Encabezado_Blanco">
                 <h2>Prototipos</h2>
             </div>
             <!-- Galeria_Prototipos -->
@@ -179,11 +190,12 @@
             </div>
             <!--  Formulario  -->
             <div class="Form">
-                <form action="" th:action='@{/index}' method="POST" th:object='${contacto}' class="Formulario">
-                    <input th:field='*{nombreCompleto}' type="text" class="input" name="Nombre" id="Nombre" placeholder="Nombre completo" required>
-                    <input th:field='*{telefono}' type="text" class="input" name="Telefono" id="Telefono" placeholder="Telefono" required>
-                    <input th:field='*{email}' type="email" class="input" name="E-mail" id="E-mail" placeholder="E-mail" required>
-                    <textarea th:field='*{mensaje}' name="Mensaje" class="input" id="Mensaje" placeholder="Mensaje..." required></textarea>
+                <form action="" method="POST"  class="Formulario">
+                    <input type="text" class="input" name="Nombre" id="Nombre" placeholder="Nombre completo" required>
+                    <input type="text" class="input" name="Telefono" id="Telefono" placeholder="Telefono" required>
+                    <input type="email" class="input" name="E-mail" id="E-mail" placeholder="E-mail" required>
+                    <textarea name="Mensaje" class="input" id="Mensaje" placeholder="Mensaje..." required></textarea>
+                    <label class="checkbox"><input type="checkbox"  id="checkbox" value="checkbox" required> Acepto los <a href="">Terminos y condiciones.</a></label>
                     <input type="submit" class="Btn_Enviar" value="Enviar">
                 </form>
             </div>
