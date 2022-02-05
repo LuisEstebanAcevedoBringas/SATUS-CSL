@@ -4,13 +4,18 @@
     padding: 30px;
     width: 100%;
     position: relative;
+    z-index: -1;
+}
+
+.En_Video{
+    width: 30%;
 }
 
 .contenedor_Video{
     position: relative;
     margin: 2rem;
-    max-width: 65rem;
-    max-height: 700px;
+    width: 60%;
+    /* max-height: 700px; */
 }
 
 .contenedor_Video video{
@@ -24,8 +29,13 @@
         flex-direction: column;
         justify-content: center;
     }
+
+    .En_Video{
+        width: 90%;
+    }
+
     .contenedor_Video{
         margin: 0.5rem;
-        width: 95%;
+        width: 90%;
     }
 }

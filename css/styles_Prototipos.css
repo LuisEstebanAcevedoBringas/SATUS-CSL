@@ -1,10 +1,9 @@
 .Prototipos{
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     flex-direction: column;
     align-items: center;
     background: #5e614e;
-    /* border: 3px solid greenyellow; */
 }
 
 .Galeria_Prototipos{

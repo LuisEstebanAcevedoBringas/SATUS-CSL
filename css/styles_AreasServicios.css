@@ -9,10 +9,14 @@
     background: #ffffff;
 }
 
+.En_Areas{
+    width: 30%;
+}
+
 .carousel{
     background-color: #000000;
     z-index: 0;
-    max-width: 65rem;
+    width: 60%;
     margin: 2rem;
 }
 
@@ -23,7 +27,12 @@
         justify-content: center;
     }
 
+    .En_Areas{
+        width: 90%;
+    }
+
     .carousel{
+        width: 90%;
         margin: 0.5rem;
     }
 }
