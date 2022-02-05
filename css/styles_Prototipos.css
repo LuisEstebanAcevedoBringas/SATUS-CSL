@@ -1,24 +1,24 @@
 .Prototipos{
     width: 100%;
-    height: 75vh;
+    height: 70vh;
     flex-direction: column;
     align-items: center;
     background: #5e614e;
+    /* border: 3px solid greenyellow; */
 }
 
 .Galeria_Prototipos{
-    max-width: 65rem;
-    flex-grow: 1;
-    margin: 0 2rem 2rem 2rem;
     display: flex;
+    flex-grow: 0.95;
+    max-width: 65rem;
+    margin: 0 2rem 2rem 2rem;
     box-sizing: border-box;
 }
 
 .Contenedor_Imagenes_Prototipo{
     margin: 0 1%;
     flex-grow: 1;
-    flex-basis: 0;
-    transition: 0.5s;
+    height: 100%;
 }
 
 .Contenedor_Imagenes_Prototipo img{
@@ -29,8 +29,21 @@
     opacity: 0.5;
 }
 
+.Tipo h3{
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
+
 .Contenedor_Imagenes_Prototipo img:hover{
     opacity: 1;
+}
+
+@media (max-width: 415px) {
+    .Tipo h3{
+        font-size: 15px;
+    }
 }
 
 @media (max-width:1024px) {

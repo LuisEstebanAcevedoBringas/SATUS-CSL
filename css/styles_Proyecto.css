@@ -7,11 +7,22 @@
     background: #5e614e;
 }
 
+.En_Proyecto{
+    width: 30%;
+}
+
+.En_Proyecto p{
+    color: white;
+    text-align: justify;
+    font-size: 18px;
+}
+
 .Galeria_Proyecto{
-    max-width: 65rem;
+    width: 60%;
     position: relative;
     margin: 2rem;
 }
+
 .Contenedor_Imagenes_Proyecto{
     position: relative;
     width: 100%;
@@ -64,7 +75,12 @@
         justify-content: center;
     }
 
+    .En_Proyecto{
+        width: 90%;
+    }
+
     .Galeria_Proyecto{
-        margin: 0.5rem;
+        width: 90%;
+        margin: 20px 0;
     }
 }

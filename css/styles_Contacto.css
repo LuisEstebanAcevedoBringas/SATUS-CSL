@@ -83,6 +83,7 @@ input::placeholder, textarea::placeholder{
 }
 
 .checkbox{
+    cursor: pointer;
     margin-bottom: 15px;
 }
 
@@ -132,22 +133,47 @@ input::placeholder, textarea::placeholder{
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
+.Contenedor_SI i{
+    color: #000000;
+}
+
 .Contenedor_SI .facebook:hover{
+    transition: 0.3s;
     background-color: #3b5999;
+}
+
+.Contenedor_SI .facebook:hover i{
+    transition: 0.3s;
     color: #ffffff;
 }
 
 .Contenedor_SI .instagram:hover{
+    transition: 0.3s;
     background-color: #e1306c;
+}
+
+.Contenedor_SI .instagram:hover i{
+    transition: 0.3s;
     color: #ffffff;
 }
 
 .Contenedor_SI .youtube:hover{
+    transition: 0.3s;
     background-color: #de463b;
+}
+
+.Contenedor_SI .youtube:hover i{
+    transition: 0.3s;
     color: #ffffff;
 }
 
 .Contenedor_SI .linkedin:hover{
+    transition: 0.3s;
     background-color: #0e76a8;
+    color: #ffffff;
+}
+
+.Contenedor_SI .linkedin:hover i{
+    transition: 0.3s;
     color: #ffffff;
 }

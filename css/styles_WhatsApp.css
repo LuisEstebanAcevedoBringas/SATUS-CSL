@@ -1,13 +1,79 @@
-.Whatsapp_Icon{
-    height: 70px;
-    width: 70px;
+.Icons{
+    /* border: 3px solid red; */
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
     bottom: 20px;    
     left: 20px;
     z-index: 1;
 }
 
-.Whatsapp_Icon img{
-    height: 4rem;
+.Boton_Ubicacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Boton_Ubicacion i{
+    color: #000000;
+}
+
+.Boton_Whats i{
+    color: #25D366;
+}
+
+.Boton_Ubicacion .icon, .Boton_Whats .icon {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
     width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.Boton_Ubicacion .tooltip, .Boton_Whats .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 1.25rem;
+    background-color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.Boton_Ubicacion .icon:hover .tooltip, .Boton_Whats .icon:hover .tooltip {
+    top: -50px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.Boton_Ubicacion .maps:hover,
+.Boton_Ubicacion .maps:hover .tooltip,
+.Boton_Ubicacion .maps:hover .tooltip::before {
+    background-color: #F6CF65;
+    color: #000000;
+}
+
+.Boton_Whats .Whatsapp:hover,
+.Boton_Whats .Whatsapp:hover .tooltip,
+.Boton_Whats .Whatsapp:hover .tooltip::before {
+    background-color: #25D366;
+    color: #000000;
+}
+
+.Boton_Whats:hover i{
+    color: #ffffff;
 }
