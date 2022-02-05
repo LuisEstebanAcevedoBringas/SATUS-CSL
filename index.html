@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="./css/styles_Video.css">
         <link rel="stylesheet" href="./css/styles_Proyecto.css"> 
         <link rel="stylesheet" href="./css/styles_Amenidades.css">
+        <link rel="stylesheet" href="./css/styles_AreasServicios.css">
         <link rel="stylesheet" href="./css/styles_Prototipos.css">
         <link rel="stylesheet" href="./css/styles_Ubicacion.css">
         <link rel="stylesheet" href="./css/styles_Contacto.css">
@@ -58,16 +59,22 @@
                         <a class="scroll" href="#Galeria_Principal">Inicio</a>
                     </li>
                     <li>
+                        <a class="scroll" href="#Video">Video</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="#Ubicacion">Ubicacion</a>
+                    </li>
+                    <li>
                         <a class="scroll" href="#Proyecto">Proyecto</a>
                     </li>
                     <li>
                         <a class="scroll" href="#Amenidades">Amenidades</a>
                     </li>
                     <li>
-                        <a class="scroll" href="#Prototipos">Prototipos</a>
+                        <a class="scroll" href="#Areas">Areas de servicio</a>
                     </li>
                     <li>
-                        <a class="scroll" href="#Ubicacion">Ubicacion</a>
+                        <a class="scroll" href="#Prototipos">Prototipos</a>
                     </li>
                     <li>
                         <a class="scroll" href="#Contacto">Contacto</a>
@@ -97,7 +104,7 @@
         </section>
 
         <!-- ---------- Video SATUS ---------- -->
-        <section class="video Flex" id="video">
+        <section class="video Flex" id="Video">
             <div class="Encabezado">
                 <h2>Video</h2>
             </div>
@@ -127,7 +134,7 @@
                 <button class="ImagenSiguiente" onclick="ImagenSiguiente_Proyecto()"> <i class="fas fa-arrow-right"></i> </button>
             </div>
             <!-- Encabezado -->
-            <div class="Encabezado_Blanco En_Proyecto">
+            <div class="Encabezado En_Proyecto">
                 <h2>Proyecto</h2>
                 <p>Proyecto residencial con una superficie de 621 m<sup>2</sup>, dividido en secciones con altos estándares de diseño en un entorno calído rodeado de biodiversidad.</p>
             </div>
@@ -136,7 +143,7 @@
         <!-- ---------- Amenidades ---------- -->
         <section class="Amenidades Flex" id="Amenidades">
             <!-- Encabezado -->
-            <div class="Encabezado">
+            <div class="Encabezado_Blanco">
                 <h2>Amenidades</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </div>
@@ -161,6 +168,35 @@
                 </div>
             </div>
         </section>
+
+                <!-- ---------- Areas de servicio ---------- -->
+                <section class="Areas Flex" id="Areas">
+                    <!-- Encabezado -->
+                    <!-- Galeria_Amenidades -->
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-interval="1000" data-pause="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./scr/assets/Images/Amenidades/Basketball.jpg" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./scr/assets/Images/Amenidades/Dog_Playground.jpg" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./scr/assets/Images/Amenidades/Gym.jpg" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./scr/assets/Images/Amenidades/Playground.jpg" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./scr/assets/Images/Amenidades/Pool.jpg" class="d-block w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Encabezado">
+                        <h2>Areas de servicio</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </section>
 
         <!-- ---------- Prototipos ---------- -->
         <section class="Prototipos Flex" id="Prototipos">
@@ -235,7 +271,7 @@
 
         <!-- ---------- Footer ---------- -->
         <section class="Footer">
-            <h2>SATUS © 2021. Todos los derechos reservados.</h2>
+            <h2>SATUS © 2022. Todos los derechos reservados.</h2>
         </section>
 
         <!-- ---------- JS script ---------- -->

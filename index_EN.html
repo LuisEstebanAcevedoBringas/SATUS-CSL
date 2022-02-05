@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="./css/styles_Video.css">
         <link rel="stylesheet" href="./css/styles_Proyecto.css"> 
         <link rel="stylesheet" href="./css/styles_Amenidades.css">
+        <link rel="stylesheet" href="./css/styles_AreasServicios.css">
         <link rel="stylesheet" href="./css/styles_Prototipos.css">
         <link rel="stylesheet" href="./css/styles_Ubicacion.css">
         <link rel="stylesheet" href="./css/styles_Contacto.css">
@@ -25,11 +26,20 @@
     </head>
     <body>
         <!-- ---------- Whatsapp Icon ---------- -->
-        <IconosFix>
-            <div class="Whatsapp_Icon">
-                <a href="https://api.whatsapp.com/send?phone=+525559456555" target="_blank"><img src="./scr/assets/Icons/Whatsapp.svg" alt="Send me a Whatsapp"></a>
+        <div class="Icons">
+            <div class="Boton_Ubicacion">
+                <div class="icon maps">
+                    <div class="tooltip">Ubicacion</div>
+                    <a href="https://www.google.com" target="_blank" ><span><i class="fas fa-map-marker-alt"></i></span></a>
+                </div>
             </div>
-        </IconosFix>
+            <div class="Boton_Whats">
+                <div class="icon Whatsapp">
+                    <div class="tooltip">Whatsapp</div>
+                    <a href="https://api.whatsapp.com/send?phone=+525559456555" target="_blank"><span><i class="fab fa-whatsapp"></i></span></a>
+                </div>
+            </div>
+        </div>
 
         <!-- ---------- Header ---------- -->
         <header class="Header Flex">
@@ -49,16 +59,22 @@
                         <a class="scroll" href="#Galeria_Principal">Home</a>
                     </li>
                     <li>
+                        <a class="scroll" href="#Video">Video</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="#Ubicacion">Location</a>
+                    </li>
+                    <li>
                         <a class="scroll" href="#Proyecto">Proyect</a>
                     </li>
                     <li>
                         <a class="scroll" href="#Amenidades">Amenities</a>
                     </li>
                     <li>
-                        <a class="scroll" href="#Prototipos">Prototypes</a>
+                        <a class="scroll" href="#Servicios">Service areas</a>
                     </li>
                     <li>
-                        <a class="scroll" href="#Ubicacion">Location</a>
+                        <a class="scroll" href="#Prototipos">Prototypes</a>
                     </li>
                     <li>
                         <a class="scroll" href="#Contacto">Contact</a>
@@ -88,7 +104,7 @@
         </section>
 
         <!-- ---------- Video SATUS ---------- -->
-        <section class="video Flex" id="video">
+        <section class="video Flex" id="Video">
             <div class="Encabezado">
                 <h2>Video</h2>
             </div>
@@ -97,6 +113,11 @@
 
                 </video>
             </div>
+        </section>
+
+        <!-- ---------- Ubicacion ---------- -->
+        <section class="Ubicacion" id="Ubicacion">
+            <img src="./scr/assets/Images/Ubicacion/Ubicacion.jpeg">
         </section>
 
         <!-- ---------- Proyecto ---------- -->
@@ -113,9 +134,9 @@
                 <button class="ImagenSiguiente" onclick="ImagenSiguiente_Proyecto()"> <i class="fas fa-arrow-right"></i> </button>
             </div>
             <!-- Encabezado -->
-            <div class="Encabezado_Blanco">
+            <div class="Encabezado En_Proyecto">
                 <h2>Proyect</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <p>Residential project with an area of 621 m<sup>2</sup>, divided into sections with high design standards in a warm environment surrounded by biodiversity.</p>
             </div>
         </section>
 
@@ -148,6 +169,35 @@
             </div>
         </section>
 
+        <!-- ---------- Areas de servicio ---------- -->
+        <section class="Areas Flex" id="Areas">
+            <!-- Encabezado -->
+            <!-- Galeria_Amenidades -->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-interval="1000" data-pause="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./scr/assets/Images/Amenidades/Basketball.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./scr/assets/Images/Amenidades/Dog_Playground.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./scr/assets/Images/Amenidades/Gym.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./scr/assets/Images/Amenidades/Playground.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./scr/assets/Images/Amenidades/Pool.jpg" class="d-block w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="Encabezado">
+                <h2>Service areas</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+        </section>
+
         <!-- ---------- Prototipos ---------- -->
         <section class="Prototipos Flex" id="Prototipos">
             <!-- Encabezado -->
@@ -165,16 +215,8 @@
                 <div class="Contenedor_Imagenes_Prototipo">
                     <a href="https://www.avagic.com" target="_blank"><img src="./scr/assets/Images/Prototipos/Image_3.jfif"></a>
                 </div>
-            </div>
-        </section>
-
-        <!-- ---------- Ubicacion ---------- -->
-        <section class="Ubicacion" id="Ubicacion">
-            <img src="./scr/assets/Images/Ubicacion/Ubicacion.jpeg">
-            <div class="Boton_Ubicacion">
-                <div class="icon maps">
-                    <div class="tooltip">Location</div>
-                    <a href="https://www.google.com" target="_blank" ><span><i class="fas fa-map-marker-alt"></i></span></a>
+                <div class="Contenedor_Imagenes_Prototipo">
+                    <a href="https://www.avagic.com" target="_blank"><img src="./scr/assets/Images/Prototipos/Image_3.jfif"></a>
                 </div>
             </div>
         </section>
@@ -217,7 +259,7 @@
 
         <!-- ---------- Footer ---------- -->
         <section class="Footer">
-            <h2>SATUS © 2021. All rights reserved.</h2>
+            <h2>SATUS © 2022. All rights reserved.</h2>
         </section>
 
         <!-- ---------- JS script ---------- -->
