@@ -13,30 +13,16 @@
     .Ubicacion{
         height: 60vh;
     }
-
-    .Boton_Ubicacion{
-        left: 45%;
-    }
 }
 
 @media(max-width:768px){
     .Ubicacion{
         height: 55vh;
     }
-
-    .Boton_Ubicacion .icon{
-        width: 3.5rem;
-        height: 3.5rem;
-        font-size: 2rem;
-    }
 }
 
 @media (max-width: 415px){
     .Ubicacion{
         height: 45vh;
-    }
-    .Boton_Ubicacion{
-        left: 40%;
-        bottom: 10px;
     }
 }
