@@ -1,6 +1,8 @@
 body{
 	overflow:hidden;
 	background-color:#fcfcfc;
+	background-image: url("../../scr/assets/Background/BG_3.png");
+	background-size:100% 100%;
 	margin:0;
 	padding:0;
 }
@@ -130,7 +132,7 @@ body{
 	left:219px;
 }
 
-.magazine-viewport .shadow{
+/* .magazine-viewport .shadow{
 	-webkit-transition: -webkit-box-shadow 0.5s;
 	-moz-transition: -moz-box-shadow 0.5s;
 	-o-transition: -webkit-box-shadow 0.5s;
@@ -141,7 +143,7 @@ body{
 	-o-box-shadow:0 0 20px #ccc;
 	-ms-box-shadow:0 0 20px #ccc;
 	box-shadow:0 0 20px #ccc;
-}
+} */
 
 .magazine-viewport .next-button,
 .magazine-viewport .previous-button{
@@ -257,11 +259,11 @@ body{
 	list-style:none;
 	display:inline-block;
 	margin:0 5px;
-	-webkit-box-shadow:0 0 10px #ccc;
+	/* -webkit-box-shadow:0 0 10px #ccc;
 	-moz-box-shadow:0 0 10px #ccc;
 	-ms-box-shadow:0 0 10px #ccc;
 	-o-box-shadow:0 0 10px #ccc;
-	box-shadow:0 0 10px  #ccc;
+	box-shadow:0 0 10px  #ccc; */
 	-webkit-transition:-webkit-transform 60ms;
 	-moz-transition:-webkit-transform 60ms;
 	-o-transition:-webkit-transform 60ms;
