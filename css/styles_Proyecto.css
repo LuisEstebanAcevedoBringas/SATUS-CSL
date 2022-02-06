@@ -21,6 +21,7 @@
     width: 60%;
     position: relative;
     margin: 2rem;
+    z-index: 0;
 }
 
 .Contenedor_Imagenes_Proyecto{

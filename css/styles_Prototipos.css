@@ -1,3 +1,8 @@
+li, ul{
+    margin: 0;
+    padding: 0;
+}
+
 .Prototipos{
     width: 100%;
     height: 75vh;
@@ -17,7 +22,9 @@
 .Contenedor_Imagenes_Prototipo{
     margin: 0 1%;
     flex-grow: 1;
-    height: 100%;
+    height: 95%;
+    width: 25%;
+    cursor: pointer;
 }
 
 .Contenedor_Imagenes_Prototipo img{
@@ -29,14 +36,41 @@
 }
 
 .Tipo h3{
-    padding: 10px;
     text-align: center;
     font-size: 22px;
     color: white;
+    margin: 20px;
 }
 
 .Contenedor_Imagenes_Prototipo img:hover{
     opacity: 1;
+}
+
+.modal{
+    cursor: default;
+}
+
+.modal-title{
+    width: 100%;
+    text-align: center;
+}
+
+.Contenido_Modal{
+    width: 100%;
+}
+
+.Imagen_Prototipo img{
+    opacity: 1;
+    width: 100%;
+}
+
+.Informacion_Prototipo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 20px;
 }
 
 @media (max-width: 415px) {

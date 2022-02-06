@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Cabo San Lucas, departamentos, construccion, arquitectura">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="shortcut icon" href="Images/Icon/Satus.ico" type="image/x-icon">
         <link rel="icon" href="Images/Icon/Satus.ico" type="image/x-icon">
         <title>Sʌtvs | CSL</title>
@@ -28,16 +29,18 @@
         <!-- ---------- Whatsapp Icon ---------- -->
         <div class="Icons">
             <div class="Boton_Ubicacion">
-                <div class="icon maps">
+                <!-- <div class="icon maps"> -->
                     <div class="tooltip">Ubicacion</div>
-                    <a href="https://www.google.com" target="_blank" ><span><i class="fas fa-map-marker-alt"></i></span></a>
-                </div>
+                    <a href="https://www.google.com" target="_blank" class="icon maps">
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                    </a>
+                <!-- </div> -->
             </div>
             <div class="Boton_Whats">
-                <div class="icon Whatsapp">
                     <div class="tooltip">Whatsapp</div>
-                    <a href="https://api.whatsapp.com/send?phone=+525559456555" target="_blank"><span><i class="fab fa-whatsapp"></i></span></a>
-                </div>
+                    <a href="https://api.whatsapp.com/send?phone=+525559456555" target="_blank" class="icon Whatsapp">
+                        <span><i class="fab fa-whatsapp"></i></span>
+                    </a>
             </div>
         </div>
 
@@ -196,7 +199,7 @@
                 </div>
             </div>
             <div class="Encabezado En_Areas">
-                <h2>Areas de servicio</h2>
+                <h2>Service areas</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </div>
         </section>
@@ -210,16 +213,154 @@
             <!-- Galeria_Prototipos -->
             <div class="Galeria_Prototipos">
                 <div class="Contenedor_Imagenes_Prototipo">
-                    <a href="https://www.avagic.com" target="_blank"><img src="./scr/assets/Images/Prototipos/Image_1.jfif"></a>
+                    <a data-toggle="modal" data-target="#Prototype_1">
+                        <img src="./scr/assets/Images/Prototipos/Image_1.jfif">
+                    </a>
+                    <div class="Tipo">
+                        <h3>Type 1</h3>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="Prototype_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Prototype 1</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="Contenido_Modal">
+                                        <div class="Imagen_Prototipo">
+                                            <!-- Agregar Imagen -->
+                                            <img src="./scr/assets/Images/Prototipos/Modal/AVAGIC_Satus1.jpeg">
+                                        </div>
+                                        <div class="Informacion_Prototipo">
+                                            <h2>Information</h2>
+                                            <ul>
+                                                <li> # rooms</li>
+                                                <li> # bathrooms</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
+
+                <!-- Prototipo 2 -->
                 <div class="Contenedor_Imagenes_Prototipo">
-                    <a href="https://www.avagic.com" target="_blank"><img src="./scr/assets/Images/Prototipos/Image_2.jfif"></a>
+                    <a data-toggle="modal" data-target="#Prototype_2">
+                        <img src="./scr/assets/Images/Prototipos/Image_2.jfif">
+                    </a>
+                    <div class="Tipo">
+                        <h3>Type 2</h3>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="Prototype_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Prototype 2</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="Contenido_Modal">
+                                        <div class="Imagen_Prototipo">
+                                            <!-- Agregar Imagen -->
+                                            <img src="./scr/assets/Images/Prototipos/Modal/AVAGIC_Satus2.jpeg">
+                                        </div>
+                                        <div class="Informacion_Prototipo">
+                                            <h2>Information</h2>
+                                            <ul>
+                                                <li> # rooms</li>
+                                                <li> # bathrooms</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
+
+                <!-- Prototipo 3 -->
                 <div class="Contenedor_Imagenes_Prototipo">
-                    <a href="https://www.avagic.com" target="_blank"><img src="./scr/assets/Images/Prototipos/Image_3.jfif"></a>
+                    <a data-toggle="modal" data-target="#Prototype_3">
+                        <img src="./scr/assets/Images/Prototipos/Image_3.jfif">
+                    </a>
+                    <div class="Tipo">
+                        <h3>Type 3</h3>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="Prototype_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Prototype 3</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="Contenido_Modal">
+                                        <div class="Imagen_Prototipo">
+                                            <!-- Agregar Imagen -->
+                                            <img src="./scr/assets/Images/Prototipos/Modal/AVAGIC_Satus3.jpeg">
+                                        </div>
+                                        <div class="Informacion_Prototipo">
+                                            <h2>Information</h2>
+                                            <ul>
+                                                <li> # rooms</li>
+                                                <li> # bathrooms</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
+
+                <!-- Prototipo 4 -->
                 <div class="Contenedor_Imagenes_Prototipo">
-                    <a href="https://www.avagic.com" target="_blank"><img src="./scr/assets/Images/Prototipos/Image_3.jfif"></a>
+                    <a data-toggle="modal" data-target="#Prototype_4">
+                        <img src="./scr/assets/Images/Prototipos/Image_3.jfif">
+                    </a>
+                    <div class="Tipo">
+                        <h3>Type 4</h3>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="Prototype_4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Prototype 4</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="Contenido_Modal">
+                                        <div class="Imagen_Prototipo">
+                                            <!-- Agregar Imagen -->
+                                            <img src="./scr/assets/Images/Prototipos/Modal/AVAGIC_Satus4.jpeg">
+                                        </div>
+                                        <div class="Informacion_Prototipo">
+                                            <h2>Information</h2>
+                                            <ul>
+                                                <li> # rooms</li>
+                                                <li> # bathrooms</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </section>
@@ -245,18 +386,18 @@
 
             <!--  Iconos de redes sociales  -->
             <div class="Contenedor_SI">
-                <div class="icon facebook">
-                    <a href="https://www.facebook.com/AVAG-IC-106639458598857"><span><i class="fab fa-facebook-f"></i></span></a>
-                </div>
-                <div class="icon instagram">
-                    <a href="https://www.instagram.com/avag_ic/"><span><i class="fab fa-instagram"></i></span></a>
-                </div>
-                <div class="icon youtube">
-                    <a href="https://www.youtube.com/channel/UCSl_mWszvAMo22ZIztXFaeQ/featured"><span><i class="fab fa-youtube"></i></span></a>
-                </div>
-                <div class="icon linkedin">
-                    <a href="https://www.linkedin.com/company/avag-ic/"><span><i class="fab fa-linkedin-in"></i></span></a>
-                </div>
+                    <a href="https://www.facebook.com/AVAG-IC-106639458598857" target="_blank" class="icon facebook">
+                        <span><i class="fab fa-facebook-f"></i></span>
+                    </a>
+                    <a href="https://www.instagram.com/avag_ic/" target="_blank" class="icon instagram">
+                        <span><i class="fab fa-instagram"></i></span>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCSl_mWszvAMo22ZIztXFaeQ/featured" target="_blank" class="icon youtube">
+                        <span><i class="fab fa-youtube"></i></span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/avag-ic/" target="_blank" class="icon linkedin">
+                        <span><i class="fab fa-linkedin-in"></i></span>
+                    </a>
             </div>
         </section>
 
@@ -271,5 +412,9 @@
         <script src="./scripts/script_Proyecto.js"></script>
         <script src="https://kit.fontawesome.com/7fb5c2cc44.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
