@@ -77,6 +77,13 @@ li, ul{
     margin-bottom: 10px;
 }
 
+.Lista_Modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 @media (max-width: 415px) {
     .Tipo h3{
         margin: 14px;
