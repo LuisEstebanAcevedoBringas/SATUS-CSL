@@ -11,6 +11,10 @@
     width: 30%;
 }
 
+.En_Video h2{
+    margin: 1.5rem 0 0 0;
+}
+
 .contenedor_Video{
     position: relative;
     margin: 2rem;
@@ -37,5 +41,12 @@
     .contenedor_Video{
         margin: 0.5rem;
         width: 90%;
+    }
+}
+
+@media only screen and (max-width : 415px) {
+    .En_Video h2{
+        width: 100%;
+        font-size: 30px;
     }
 }

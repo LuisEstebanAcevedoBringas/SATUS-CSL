@@ -11,11 +11,14 @@ li, ul{
     background: #5e614e;
 }
 
+.En_Prototipo h2{
+    margin: 1.5rem 0 0 0;
+}
+
 .Galeria_Prototipos{
     display: flex;
     flex-grow: 0.95;
     max-width: 65rem;
-    margin: 0 2rem 2rem 2rem;
     box-sizing: border-box;
 }
 
@@ -87,7 +90,7 @@ li, ul{
 @media (max-width: 415px) {
     .Tipo h3{
         margin: 14px;
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
@@ -99,5 +102,12 @@ li, ul{
 
     .Galeria_Prototipos{
         margin: 0.5rem;
+    }
+}
+
+@media only screen and (max-width : 415px) {
+    .En_Prototipo h2{
+        width: 100%;
+        font-size: 30px;
     }
 }

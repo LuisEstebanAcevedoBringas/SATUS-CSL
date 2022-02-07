@@ -11,6 +11,10 @@
     width: 30%;
 }
 
+.En_Proyecto h2{
+    margin: 2rem 0;
+}
+
 .En_Proyecto p{
     color: #000000;
     text-align: justify;
@@ -83,5 +87,17 @@
     .Galeria_Proyecto{
         width: 90%;
         margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width : 415px) {
+    .En_Proyecto h2{
+        width: 100%;
+        font-size: 30px;
+    }
+    
+    .En_Proyecto p{
+        width: 100%;
+        font-size: 18px;
     }
 }

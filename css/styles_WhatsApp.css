@@ -80,3 +80,11 @@
 .Boton_Whats:hover i{
     color: #ffffff;
 }
+
+@media only screen and (max-width : 415px) {
+    .Boton_Ubicacion .icon, .Boton_Whats .icon{
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+}
