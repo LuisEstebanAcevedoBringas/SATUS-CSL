@@ -1,5 +1,4 @@
 .Icons{
-    /* border: 3px solid red; */
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -14,6 +13,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.Boton_Whats{
+    margin-top: 15px;
 }
 
 .Boton_Ubicacion i{

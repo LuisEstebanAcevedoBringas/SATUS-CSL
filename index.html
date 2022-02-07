@@ -45,53 +45,71 @@
         </div>
 
         <!-- ---------- Header ---------- -->
-        <header class="Header Flex">
-            <div class="Logo Flex">
-                <img class="LS" src="./scr/assets/Logos/Logo_Satus.png">
-                <h2>by</h2>
-                <a href="https://www.avagic.com" target="_blank"><img class="LA" src="./scr/assets/Logos/Logo_AVAGIC.png"></a>
-            </div>
-            <!-- ---------- Boton Menu (Moviles) ---------- -->
-            <button class="Menu_Movil" aria-controls="Menu_Navegacion" aria-expanded="false">
-                <span class="sr-only"></span>
-            </button>
-            <!-- ---------- Menu de navegacion ---------- -->
-            <nav>
-                <ul id="Menu_Navegacion" data-visible="false" class="Menu_Navegacion Flex">
-                    <li>
-                        <a class="scroll" href="#Galeria_Principal">Inicio</a>
-                    </li>
-                    <li>
-                        <a class="scroll" href="#Video">Video</a>
-                    </li>
-                    <li>
-                        <a class="scroll" href="#Ubicacion">Ubicacion</a>
-                    </li>
-                    <li>
-                        <a class="scroll" href="#Proyecto">Proyecto</a>
-                    </li>
-                    <li>
-                        <a class="scroll" href="#Amenidades">Amenidades</a>
-                    </li>
-                    <li>
-                        <a class="scroll" href="#Areas">Areas de servicio</a>
-                    </li>
-                    <li>
-                        <a class="scroll" href="#Prototipos">Prototipos</a>
-                    </li>
-                    <li>
-                        <a class="scroll" href="#Contacto">Contacto</a>
-                    </li>
-                    <li>
-                        <a class="scroll" href="./magazine/index.html" target="_blank">Album</a>
-                    </li>
-                    <li class="Lenguaje">
-                        <a href="./index_EN.html"><img src="./scr/assets/Icons/Languajes/English.png" alt="English"></a>
-                    </li>
-                    <li class="Lenguaje">
-                        <a href="./index.html"><img src="./scr/assets/Icons/Languajes/Spanish.png" alt="Español"></a>
-                    </li>
-                </ul>
+        <header class="header">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-xl navbar-dark static-top fixed-top" style="background-color: #010101;">
+                <div class="container Flex" style="max-width:100%; padding: 10px 20px">
+                    <!-- Logo AVIGIC -->
+                    <a class="navbar-brand" href="index.html">
+                        <img class="LS" src="./scr/assets/Logos/Logo_Satus.png" height="50px">
+                        <h5>by</h5>
+                        <img class="LA" src="./scr/assets/Logos/Logo_AVAGIC.png"  height="30px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#Galeria_Principal">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#Video">Video</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Ubicacion">Ubicacion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Proyecto">Proyecto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Amenidades">Amenidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Areas">Areas de servicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Prototipos">Prototipos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Contacto">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./magazine/index.html">Album</a>
+                            </li>
+                            <li class="Lenguaje">
+                                <a href="./index_EN.html"><img src="./scr/assets/Icons/Languajes/English.png" alt="English"></a>
+                            </li>
+                            <li class="Lenguaje">
+                                <a href="./index.html"><img src="./scr/assets/Icons/Languajes/Spanish.png" alt="Español"></a>
+                            </li>
+                        </ul>
+                        <div class="Contenedor_SI Flex">
+                            <div class="icon facebook">
+                                <a href="https://www.facebook.com/AVAG-IC-106639458598857" target="_blank"><span><i class="fab fa-facebook-f"></i></span></a>
+                            </div>
+                            <div class="icon instagram">
+                                <a href="https://www.instagram.com/avag_ic/" target="_blank"><span><i class="fab fa-instagram"></i></span></a>
+                            </div>
+                            <div class="icon youtube">
+                                <a href="https://www.youtube.com/channel/UCSl_mWszvAMo22ZIztXFaeQ/featured" target="_blank"><span><i class="fab fa-youtube"></i></span></a>
+                            </div>
+                            <div class="icon linkedin">
+                                <a href="https://www.linkedin.com/company/avag-ic/" target="_blank"><span><i class="fab fa-linkedin-in"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </header>
         
@@ -385,7 +403,7 @@
             </div>
 
             <!--  Iconos de redes sociales  -->
-            <div class="Contenedor_SI">
+            <!-- <div class="Contenedor_SI">
                 <a href="https://www.facebook.com/AVAG-IC-106639458598857" target="_blank" class="icon facebook">
                     <span><i class="fab fa-facebook-f"></i></span>
                 </a>
@@ -398,7 +416,7 @@
                 <a href="https://www.linkedin.com/company/avag-ic/" target="_blank" class="icon linkedin">
                     <span><i class="fab fa-linkedin-in"></i></span>
                 </a>
-        </div>
+        </div> -->
         </section>
 
         <!-- ---------- Footer ---------- -->
@@ -407,7 +425,6 @@
         </section>
 
         <!-- ---------- JS script ---------- -->
-        <script src="./scripts/script_MenuNavegacion.js"></script>
         <script src="./scripts/script_GaleriaPrincipal.js"></script>
         <script src="./scripts/script_Proyecto.js"></script>
         <script src="https://kit.fontawesome.com/7fb5c2cc44.js" crossorigin="anonymous"></script>

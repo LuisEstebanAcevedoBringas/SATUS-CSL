@@ -1,126 +1,74 @@
-.Header{
-    order: 1;
-    background: hsl(0 0% 0% / 0.4);
+ul{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+    text-decoration: none;
 }
 
-.Logo{
-    margin: 0;
+li{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar{
     padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+.navbar-brand{
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.Logo h2{
-    font-size: 25px;
-    color: #ffffff;
+.navbar-brand h5{
+    margin: 0 20px;
+    /* margin-top: 15px; */
 }
-
-.LS{
-    margin: 1rem 0 1rem 1rem;
-    height: 3.5rem;
-}
-
+/* 
 .LA{
-    margin-top: 10px;
-    height: 2rem;
+    margin-top: 20px;
+} */
+
+.navbar-nav{
+    width: 100%;
 }
 
-.Menu_Movil{
-    display: none;
-}
-
-.Menu_Navegacion{
-    font-size: 18px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.Menu_Navegacion a{
-    color: #ffffff;
-    text-decoration: none;
-    margin-inline-end: 1em;
-}
-
-.Menu_Navegacion a:hover{
-    color: #6f6f6e;
-    transition: 0.5s;
-}
-
-.Menu_Navegacion img{
+.Lenguaje img{
     aspect-ratio: 1;
     width: 2.5rem;
     opacity: 0.7;
-    }
+    margin: 10px;
+}
 
-    .Menu_Navegacion img:hover{
-        opacity: 1;
-        cursor: pointer;
-    }
+.Lenguaje img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
 
-/* ----------Menu desplegable ---------- */
-@media (max-width:1300px) {
-    .Header{
-        background: hsl(0 0% 0% / 0.9);
-        position: fixed;
-    }
+.Contenedor_SI{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
 
-    .LS{
-        height: 2.75rem;
-    }
+.Contenedor_SI .icon{
+    margin: 20px;
+    font-size: 25px;
+}
 
-    .LA{
-        height: 1.5rem;
-    }
+.Contenedor_SI i{
+    color: #ffffff;
+}
 
-    .Logo h2{
-        font-size: 20px;
-        color: #ffffff;
-    }
-
-    .Menu_Navegacion{
-        font-size: 20px;
-        background: hsl(0 0% 0% / 0.9);
-        z-index: 1000;
-        position: fixed;
-        inset: 0 0 0 50%;
-        flex-direction: column;
-        padding: min(40vh, 3rem);
-        transform: translateX(100%); /*Ocultamos el menu*/
-        transition: transform 350ms ease-out; /*Animacion de menu plegable*/
-    }
-
-    .Menu_Navegacion a:hover{
-        background-color: transparent;
-    }
-
-
-    .Menu_Navegacion[data-visible="true"]{
-        transform: translateX(0%);
-    }
-
-    .Menu_Movil{
-        display: block;
-        position: absolute;
-        z-index: 9999;
-        background: url("../scr/assets/Icons/Open_Menu.png");
-        background-repeat: no-repeat;
-        width: 2rem;
-        aspect-ratio: 1;
-        top: 1.25rem;
-        right: 1.25rem;
-        border: none;
-    }
-
-    .Menu_Movil[aria-expanded = "true"]{
-        background: url("../scr/assets/Icons/Close_Menu.png");
-        background-repeat: no-repeat;
-    }
+.Contenedor_SI i:hover{
+    transition: 0.4s;
+    color: #6f6f6e;
 }

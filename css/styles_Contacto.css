@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     padding: 15px auto;
-    margin:auto;
+    margin-bottom: 2rem;
     flex-direction: column;
 }
 
@@ -13,8 +13,6 @@
 .TextoContacto{
     width: 100%;
     text-align: center;
-    margin: 2rem 0;
-    margin-bottom: 0;
 }
 
 .TextoContacto h2{
@@ -108,7 +106,7 @@ input::placeholder, textarea::placeholder{
 }
 
 /* ---------- Social Icons ---------- */
-.Contenedor_SI{
+/* .Contenedor_SI{
     display: flex;
     justify-content:center;
     margin-bottom: 20px;
@@ -176,4 +174,4 @@ input::placeholder, textarea::placeholder{
 .Contenedor_SI .linkedin:hover i{
     transition: 0.3s;
     color: #ffffff;
-}
+} */
