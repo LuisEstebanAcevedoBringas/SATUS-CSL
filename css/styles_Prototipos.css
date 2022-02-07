@@ -79,14 +79,15 @@ li, ul{
 
 @media (max-width: 415px) {
     .Tipo h3{
-        font-size: 15px;
+        margin: 14px;
+        font-size: 12px;
     }
 }
 
 @media (max-width:1024px) {
     .Prototipos{
         padding: 15px;
-        height: 60vh;
+        height: 55vh;
     }
 
     .Galeria_Prototipos{
