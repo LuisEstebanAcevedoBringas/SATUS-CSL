@@ -7,6 +7,8 @@
     padding: 15px auto;
     margin-bottom: 2rem;
     flex-direction: column;
+    background-image: url("../scr/assets/Background/BG_1.png");
+    background-size: 100% 100%;
 }
 
 /* Texto contacto */

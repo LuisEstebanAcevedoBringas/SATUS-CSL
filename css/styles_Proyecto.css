@@ -5,6 +5,8 @@
     align-items: center;
     justify-content: space-evenly;
     background: #ffffff;
+    background-image: url("../scr/assets/Background/BG_1.png");
+    background-size: 100% 100%;
 }
 
 .En_Proyecto{

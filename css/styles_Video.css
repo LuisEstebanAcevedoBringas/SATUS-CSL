@@ -5,6 +5,8 @@
     width: 100%;
     position: relative;
     z-index: -1;
+    background-image: url("../scr/assets/Background/BG_1.png");
+    background-size: 100% 100%;
 }
 
 .En_Video{
