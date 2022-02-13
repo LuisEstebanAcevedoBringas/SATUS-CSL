@@ -96,6 +96,7 @@ textarea{
 input::placeholder, textarea::placeholder{
     color: #000000;
     opacity: 0.5;
+    font-size: 16px;
 }
 
 .checkbox{

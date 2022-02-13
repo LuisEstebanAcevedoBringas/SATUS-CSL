@@ -38,7 +38,7 @@ li{
 }
 
 .LA{
-    /* margin-top: 20px; */
+    margin-top: 10px;
     height: 30px;
 }
 
@@ -48,6 +48,7 @@ li{
     }
 
     .LA{
+        margin-top: 0;
         height: 20px;
     }
 
@@ -81,8 +82,8 @@ li{
 }
 
 .Contenedor_SI .icon{
-    margin: 20px;
-    font-size: 25px;
+    margin: 7px;
+    font-size: 22px;
 }
 
 .Contenedor_SI i{
@@ -91,5 +92,5 @@ li{
 
 .Contenedor_SI i:hover{
     transition: 0.4s;
-    color: #6f6f6e;
+    color: #5e614e;
 }

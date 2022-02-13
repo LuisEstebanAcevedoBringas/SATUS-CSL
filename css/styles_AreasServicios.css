@@ -22,7 +22,7 @@
 .En_Areas p{
     color: #000000;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 
@@ -58,6 +58,6 @@
     
     .En_Areas p{
         width: 100%;
-        font-size: 18px;
+        font-size: 16px;
     }
 }

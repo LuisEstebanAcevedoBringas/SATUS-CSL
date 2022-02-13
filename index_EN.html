@@ -50,11 +50,11 @@
             <nav class="navbar navbar-expand-xl navbar-dark static-top fixed-top" style="background-color: #010101;">
                 <div class="container Flex" style="max-width:100%; padding: 10px 20px">
                     <!-- Logo AVIGIC -->
-                    <a class="navbar-brand" href="index.html">
-                        <img class="LS" src="./src/assets/Logos/Logo_Satus.png">
+                    <div class="navbar-brand">
+                        <a><img class="LS" src="./src/assets/Logos/Logo_Satus.png"></a>
                         <h5>by</h5>
-                        <img class="LA" src="./src/assets/Logos/Logo_AVAGIC.png">
-                    </a>
+                        <a href="https://www.avagic.com/" target="_blank"><img class="LA" src="./src/assets/Logos/Logo_AVAGIC.png"></a>
+                    </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -85,7 +85,7 @@
                                 <a class="nav-link" href="#Contacto">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./magazine_en/Magazine_en.html">Album</a>
+                                <a class="nav-link" href="./Brochure/Brochure.html">Brochure</a>
                             </li>
                             <li class="Lenguaje">
                                 <a href="./index_EN.html"><img src="./src/assets/Icons/Languajes/English.png" alt="English"></a>
@@ -124,8 +124,6 @@
                 <img src="./src/assets/Images/Galeria_Principal/AVAGIC_Satus_5.jpeg">
                 <img src="./src/assets/Images/Galeria_Principal/AVAGIC_Satus_6.jpeg">
                 <img src="./src/assets/Images/Galeria_Principal/AVAGIC_Satus_7.jpeg">
-                <img src="./src/assets/Images/Galeria_Principal/AVAGIC_Satus_8.jpeg">
-                <img src="./src/assets/Images/Galeria_Principal/AVAGIC_Satus_9.jpeg">
             </div>
         </section>
 
@@ -387,13 +385,13 @@
             </div>
             <!--  Formulario  -->
             <div class="Form">
-                <form action="" method="POST"  class="Formulario">
-                    <input type="text" class="input" name="Nombre" id="Nombre" placeholder="Full name" required>
-                    <input type="text" class="input" name="Telefono" id="Telefono" placeholder="Phone number" required>
-                    <input type="email" class="input" name="E-mail" id="E-mail" placeholder="E-mail" required>
-                    <textarea name="Mensaje" class="input" id="Mensaje" placeholder="Message..." required></textarea>
-                    <label class="checkbox"><input type="checkbox"  id="checkbox" value="checkbox" required> I accept the<a href=""> Terms and conditions</a></label>
-                    <input type="submit" class="Btn_Enviar" value="Send">
+                <form action="/sendEmail.php" method="POST"  class="Formulario">
+                    <input type="text" class="input" name="Nombre" id="Nombre" placeholder="Nombre completo" required>
+                    <input type="text" class="input" name="Telefono" id="Telefono" placeholder="Telefono" required>
+                    <input type="email" class="input" name="Email" id="Email" placeholder="E-mail" required>
+                    <textarea name="Mensaje" class="input" id="Mensaje" placeholder="Mensaje..." required></textarea>
+                    <label class="checkbox"><input type="checkbox"  id="checkbox" value="checkbox" required> Acepto los <a href="">Terminos y condiciones.</a></label>
+                    <input type="submit" class="Btn_Enviar" value="Enviar">
                 </form>
             </div>
         </section>
