@@ -1,6 +1,6 @@
 //Galeria - Proyecto
 let Imagen_Actual = 0; // current slide
-let Total_Imagenes = 4; // total slides
+let Total_Imagenes = 3; // total slides
 
 function ImagenSiguiente_Proyecto(){
     document.getElementById("Content" + (Imagen_Actual+1)).classList.remove("ImagenActiva");
