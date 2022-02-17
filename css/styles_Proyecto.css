@@ -1,7 +1,7 @@
 .Proyecto{
     width: 100%;
     padding: 30px;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     background: #ffffff;
@@ -10,7 +10,7 @@
 }
 
 .En_Proyecto{
-    width: 30%;
+    width: 50%;
 }
 
 .En_Proyecto h2{
@@ -19,67 +19,29 @@
 
 .En_Proyecto p{
     color: #000000;
-    text-align: justify;
+    text-align: center;
     font-size: 16px;
 }
 
-.Galeria_Proyecto{
-    width: 60%;
-    position: relative;
-    margin: 2rem;
-    z-index: 0;
+.MasterPlan, .DescripcionGeneral {
+    width: 75%;
+    margin: 20px;
 }
 
-.Contenedor_Imagenes_Proyecto{
-    position: relative;
-    width: 100%;
-}
-.Imagen_Proyecto{
-    position: relative;
-    width: 100%;
-    display: none;
-}
-.ImagenActiva{
-    display: block;
-}
-
-.Contenedor_Imagenes_Proyecto img{
+.MasterPlan img, .DescripcionGeneral img{
     max-width: 100%;
-    max-height: 100%;
 }
 
-.ImagenAnterior, .ImagenSiguiente{
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    background-color: #5e614e;
-    color: #ffffff;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    border: none;
-    border-radius: 50px;
-    font-size: 18px;
-    font-weight: bolder;
-    cursor: pointer;
-}
-
-.ImagenAnterior:hover, .ImagenSiguiente:hover{
-    background: hsl(0 0% 0% / 0.9);
-}
-
-.ImagenAnterior{
-    left: 15px;
-}
-.ImagenSiguiente{
-    right: 15px;
-}
 
 @media (max-width:1024px) {
     .Proyecto{
         padding: 15px;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
+    }
+
+    .MasterPlan, .DescripcionGeneral {
+        width: 100%;
     }
 
     .En_Proyecto{
