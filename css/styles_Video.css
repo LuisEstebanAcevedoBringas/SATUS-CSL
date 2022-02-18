@@ -10,7 +10,12 @@
 }
 
 .En_Video{
-    width: 30%;
+    margin: 2rem;
+    max-width: 30%;
+}
+
+.En_Video img{
+    width: 100%;
 }
 
 .En_Video h3{
@@ -38,7 +43,7 @@
     }
 
     .En_Video{
-        width: 90%;
+        max-width: 90%;
     }
 
     .contenedor_Video{
