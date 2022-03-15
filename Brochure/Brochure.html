@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<title>Satus | Brochure</title>
-		<link rel="stylesheet" href="./css/magazine.css">
+		<link rel="stylesheet" href="./css/Brochure.css">
 		<link rel="icon" href="../src/assets/Icons/Satus.ico" type="image/x-icon">
 	</head>
 <body>
@@ -12,17 +12,30 @@
 <div class="zoom-icon zoom-icon-in"></div>
 
 <div class="Icons">
-	<div class="Boton_Ubicacion">
+	<div class="Boton">
+		<!-- <div class="icon maps"> -->
+			<div class="tooltip">Inicio</div>
+			<a href="https://satuscabo.com" target="_blank" class="icon btn">
+				<span><i class="fas fa-home"></i></span>
+			</a>
+	</div>
+	<div class="Boton">
+		<!-- <div class="icon maps"> -->
+			<div class="tooltip">Descarga</div>
+			<a href="./Brochure_English.pdf" target="_blank" class="icon btn">
+				<span><i class="fas fa-file-download"></i></span>
+			</a>
+	</div>
+	<div class="Boton">
 		<!-- <div class="icon maps"> -->
 			<div class="tooltip">Ubicacion</div>
-			<a href="https://satuscabo.com/#Contacto" target="_blank" class="icon maps">
+			<a href="https://satuscabo.com/#Contacto" target="_blank" class="icon btn">
 				<span><i class="far fa-envelope"></i></span>
 			</a>
-		<!-- </div> -->
 	</div>
 	<div class="Boton_Whats">
 			<div class="tooltip">Whatsapp</div>
-			<a href="https://api.whatsapp.com/send?phone=+525559456555" target="_blank" class="icon Whatsapp">
+			<a href="https://api.whatsapp.com/send?phone=+526242281358" target="_blank" class="icon Whatsapp">
 				<span><i class="fab fa-whatsapp"></i></span>
 			</a>
 	</div>
@@ -58,6 +71,18 @@
 <script src="./js/turn.min.js"></script>
 <script src="./js/turn.html4.min.js"></script>
 <script src="./js/zoom.min.js"></script>
+
+<script language="Javascript">
+    window.onload=function(){
+    var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+    if (mobile) {
+        alert("For a better experience turn your phone horizontally and reload the page.");              
+    } else {
+
+    }
+}
+</script>
+
 <script type="text/javascript">
 
 function loadApp() {
@@ -94,7 +119,7 @@ function loadApp() {
 
 			// The number of pages
 
-			pages: 37,
+			pages: 56,
 
 			// Events
 
@@ -413,6 +438,6 @@ yepnope({
 });
 
 </script>
-
+<script src="https://kit.fontawesome.com/7fb5c2cc44.js" crossorigin="anonymous"></script>
 </body>
 </html>
